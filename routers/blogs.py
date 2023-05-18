@@ -29,6 +29,6 @@ async def store(id: int, documents: blog.BlogCreate):
 
 
 # Destroy specific resource
-@routers.put('/{id}')
+@routers.delete('/{id}')
 async def destroy(id: int):
     return {"status": True, "message": "Blog deleted.", "data": None}
