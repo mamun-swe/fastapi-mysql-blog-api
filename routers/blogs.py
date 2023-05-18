@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from schemas import blog
+from schema import blog
 
 routers = APIRouter()
 
