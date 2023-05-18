@@ -24,7 +24,7 @@ async def store(documents: blog.BlogCreate):
 
 # Update specific resource
 @routers.put('/{id}')
-async def store(id: int, documents: blog.BlogCreate):
+async def update(id: int, documents: blog.BlogCreate):
     return {"status": True, "message": "Blog updated.", "data": documents}
 
 
